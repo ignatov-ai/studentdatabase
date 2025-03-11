@@ -54,6 +54,11 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.scanCardButton).setOnClickListener { scanCard() }
         findViewById<Button>(R.id.addPhotoButton).setOnClickListener { pickImageLauncher.launch("image/*") }
         findViewById<Button>(R.id.takePhotoButton).setOnClickListener { takePhotoLauncher.launch() }
+
+        findViewById<Button>(R.id.btnAddStudent).setOnClickListener {
+            val intent = Intent(this, AddStudentActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun loadDataFromExcel() {
