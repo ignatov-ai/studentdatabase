@@ -1,4 +1,3 @@
-// DatabaseHelper.kt
 package com.example.studentdatabase
 
 import android.content.ContentValues
